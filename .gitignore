@@ -1,4 +1,5 @@
-.pth
-.pyc
+*.pth
+*.pyc
 *test*
-./__pycache__/**
+*.ipynb
+./__pycache__/*

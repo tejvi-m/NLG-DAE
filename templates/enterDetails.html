@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+div {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#gen{
+  font-size: 20px;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+body {
+  background-image: url('/static/img1.jpg'); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+input[type=button], input[type=submit], input[type=reset] {
+   background-color: #067c74;
+   border: none;
+   color: white;
+   padding: 3px 32px;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+input[type=text]{
+  cols:40;
+}
+
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+ float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+</style>
+<body>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third" >
+
+      <div  class="w3-opacity">
+        <div class="w3-display-container">
+
+<div>
+          <h2>THE LIST</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search restaurants..." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">KFC</a></li>
+  <li><a href="#">BarbaqueNation</a></li>
+  <li><a href="#">McDonalds</a></li>
+  <li><a href="#">DominosPizza</a></li>
+  <li><a href="#">JustBake</a></li>
+  <li><a href="#">ChutneyChang</a></li>
+  <li><a href="#">Paradise</a></li>
+</ul>
+<hr>
+<ul id="myUL">
+  <li><a href="#">ENTER DETAILS</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</div>
+
+
+
+
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    <div>
+      <br>
+      <br>
+      <hr>
+    </div>
+      <div class="w3-opacity-min" style="
+  background-color: #f6f6f6;">
+        <h2 class="w3-text-grey w3-padding-16"><i class="far fa-bookmark fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>ENTER A PHRASE</h2>
+        <div class="w3-container">
+          <form method = "POST" action = "">
+
+        <br><br>
+            <input name="text">
+            <input type = "submit" value = "Generate">
+          </form>
+        <div class = "hell">
+          {% if (label) %}
+              <span id = "gen"> {{ label }} </br> input sentence: {{ label1 }}</span>
+
+              {% endif %}
+          </div>
+
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+</body>
+</html>

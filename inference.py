@@ -5,14 +5,14 @@ import torch
 from torch import nn
 
 #the word chunks that serve as conditioning to the generations
-L = ["The Vaults near riverside 2 ratings not children", "The Italian city centre children"]
+L = ["The Vaults expensive Chinese riverside 2 5 rating not friendly", "The Eagle cheap Italian not friendly"]
 
 trainset = pd.read_csv('./data/trainset.csv')
 trainset = trainset.assign(clean=utils.replace_punctuation(trainset['ref']))
 vocab_to_int, int_to_vocab = utils.get_tokens(trainset['clean'])
 
-encoder = torch.load("nlgenc.pth", map_location = 'cpu')
-decoder = torch.load("nlgdec.pth", map_location = 'cpu')
+encoder = torch.load("NERnlgenc.pth", map_location = 'cpu')
+decoder = torch.load("NERnlgdec.pth", map_location = 'cpu')
 
 def test(dataset, encoder, decoder,
           max_length=50, device=None):

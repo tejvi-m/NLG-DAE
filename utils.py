@@ -26,7 +26,10 @@ punc_tokens = {'!': ' <EXCLAIM> ',
 
 
 def replace_punctuation(dataset):
-    return [''.join([punc_tokens.get(char, char) for char in seq]) for seq in dataset]
+    try:
+        return [''.join([punc_tokens.get(char, char) for char in str(seq)]) for seq in dataset]
+    except:
+        print(seq)
 
 
 def extract_ngrams(sequence, n=2):

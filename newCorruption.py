@@ -2,7 +2,6 @@ import spacy
 import numpy as np
 import pandas
 import utils
-
 nlp = spacy.load("en_core_web_sm")
 
 def test(x):
@@ -20,12 +19,17 @@ def test(x):
         except:
             print(x)
 
+
+
+
 def newCorrupt(sentence):
     #get names - propernounse and sometimes nouns.
     #get adjectives
     #NER will get the cardinal values i.e., numbers.
-    #get everything in NER except the ones tagged as GPE
+    #get everything in NER
     #finally make the whole thing a set.
+
+    #using NER doesn't add much to it right now
 
     sentence = nlp(sentence)
 

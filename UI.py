@@ -15,8 +15,8 @@ trainset = pd.read_csv('./data/trainset.csv')
 trainset = trainset.assign(clean=utils.replace_punctuation(trainset['ref']))
 vocab_to_int, int_to_vocab = utils.get_tokens(trainset['clean'])
 
-encoder = torch.load("nlgenc.pth", map_location = 'cpu')
-decoder = torch.load("nlgdec.pth", map_location = 'cpu')
+encoder = torch.load("NERnlgenc.pth", map_location = 'cpu')
+decoder = torch.load("NERnlgdec.pth", map_location = 'cpu')
 
 def test(dataset, encoder, decoder,
           max_length=50, device=None):
@@ -115,6 +115,58 @@ def my_form_post():
         processed_text = "Out of vocabulary word used. Try again."
 
     return render_template('enterDetails.html', label = processed_text, label1 = text)
+
+from flask import Flask, make_response, request
+
+def transform(text_file_contents):
+    data = ""
+
+    df = text_file_contents.split("\n")
+    for cnt in range(1, len(df)-1):
+        string = df[cnt]
+        string.replace('yes', 'family friendly')
+        string.replace('no', 'not family friendly')
+        st = (string.split(","))[1:]
+        string1 = ''
+        for s in st:
+            string1 += ' ' + s
+
+
+        data+= generate([string1.strip()]) + '\n'
+
+
+
+
+    return data
+
+
+@app.route('/upload')
+def form():
+    return """
+        <html>
+            <body>
+                <h1>Transform a file demo</h1>
+
+                <form action="/transform" method="post" enctype="multipart/form-data">
+                    <input type="file" name="data_file" />
+                    <input type="submit" />
+                </form>
+            </body>
+        </html>
+    """
+
+@app.route('/transform', methods=["POST"])
+def transform_view():
+    request_file = request.files['data_file']
+    if not request_file:
+        return "No file"
+    file_contents = request_file.stream.read().decode("utf-8")
+
+    result = transform(file_contents)
+
+    response = make_response(result)
+    response.headers["Content-Disposition"] = "attachment; filename=result.txt"
+    return response
 
 if __name__ == '__main__':
     app.run(debug = True)

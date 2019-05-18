@@ -142,19 +142,7 @@ def transform(text_file_contents):
 
 @app.route('/upload')
 def form():
-    return """
-        <html>
-            <body>
-                <h1>Transform a file demo</h1>
-
-                <form action="/transform" method="post" enctype="multipart/form-data">
-                    <input type="file" name="data_file" />
-                    <input type="submit" />
-                </form>
-            </body>
-        </html>
-    """
-
+    return render_template("upload.html")
 @app.route('/transform', methods=["POST"])
 def transform_view():
     request_file = request.files['data_file']

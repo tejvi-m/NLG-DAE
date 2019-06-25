@@ -1,0 +1,601 @@
+,area,customer rating,eatType,familyFriendly,food,name,near,priceRange
+0,riverside,1 out of 5,pub,yes,,Aromi,,
+1,riverside,,coffee shop,yes,Fast food,The Wrestlers,Raja Indian Cuisine,moderate
+2,,high,,,Fast food,Midsummer House,All Bar One,more than £30
+3,,,,,Japanese,Fitzbillies,The Six Bells,less than £20
+4,riverside,,,,Fast food,Bibimbap House,Clare Hall,moderate
+5,,3 out of 5,,yes,Japanese,Strada,Rainbow Vegetarian Café,£20-25
+6,,5 out of 5,,yes,Indian,Cotto,Ranch,
+7,,,restaurant,yes,French,Loch Fyne,,high
+8,riverside,low,pub,,English,The Waterman,,
+9,riverside,,pub,,Italian,Green Man,Café Rouge,
+10,riverside,,,no,French,Alimentum,,more than £30
+11,,,,no,French,The Golden Curry,The Bakers,moderate
+12,,1 out of 5,coffee shop,yes,,Giraffe,The Bakers,high
+13,riverside,5 out of 5,,no,Italian,The Waterman,,cheap
+14,riverside,3 out of 5,coffee shop,yes,Italian,The Eagle,Burger King,moderate
+15,,,pub,yes,French,The Plough,Café Rouge,less than £20
+16,,high,pub,yes,Indian,Zizzi,,
+17,city centre,low,,no,Japanese,The Rice Boat,,
+18,,,,yes,,Clowns,Café Sicilia,moderate
+19,riverside,average,,no,French,The Waterman,,less than £20
+20,city centre,,pub,,Italian,The Mill,,high
+21,,5 out of 5,,,Italian,Browns Cambridge,,cheap
+22,riverside,,,yes,Chinese,Alimentum,,£20-25
+23,riverside,low,,yes,French,The Rice Boat,,
+24,,,pub,,Fast food,The Cambridge Blue,Café Brazil,moderate
+25,city centre,low,coffee shop,yes,Italian,The Eagle,Burger King,less than £20
+26,riverside,1 out of 5,coffee shop,yes,Japanese,Fitzbillies,,moderate
+27,riverside,1 out of 5,coffee shop,no,French,Fitzbillies,,moderate
+28,riverside,1 out of 5,,yes,French,The Rice Boat,Express by Holiday Inn,moderate
+29,riverside,low,coffee shop,,Japanese,Cotto,The Portland Arms,more than £30
+30,riverside,,,yes,Fast food,Alimentum,,moderate
+31,,low,,yes,English,Cotto,Ranch,
+32,riverside,,pub,,Fast food,Green Man,Café Rouge,
+33,riverside,high,pub,,Italian,The Waterman,,
+34,,,restaurant,no,English,Loch Fyne,,
+35,riverside,average,,yes,French,The Rice Boat,Express by Holiday Inn,less than £20
+36,riverside,,,yes,Japanese,Alimentum,,less than £20
+37,city centre,high,,yes,Chinese,The Waterman,,£20-25
+38,,3 out of 5,,no,,Fitzbillies,Express by Holiday Inn,£20-25
+39,riverside,high,coffee shop,yes,Indian,Fitzbillies,,more than £30
+40,riverside,,coffee shop,yes,Japanese,The Wrestlers,Raja Indian Cuisine,less than £20
+41,riverside,average,coffee shop,yes,Fast food,Aromi,,
+42,,average,pub,yes,Indian,Zizzi,,
+43,riverside,3 out of 5,,,Japanese,The Phoenix,,£20-25
+44,,average,,yes,English,Strada,Rainbow Vegetarian Café,cheap
+45,,low,,yes,English,The Wrestlers,,less than £20
+46,riverside,average,coffee shop,no,,Blue Spice,Avalon,less than £20
+47,riverside,3 out of 5,coffee shop,no,Japanese,The Eagle,Burger King,high
+48,city centre,low,,no,Chinese,The Rice Boat,,
+49,,,restaurant,yes,,The Plough,The Bakers,moderate
+50,city centre,,pub,,Chinese,The Mill,,high
+51,,5 out of 5,coffee shop,yes,Fast food,The Punter,Café Sicilia,cheap
+52,riverside,low,pub,no,,Aromi,,
+53,,,restaurant,no,Italian,Loch Fyne,,less than £20
+54,,high,,yes,Chinese,The Wrestlers,,more than £30
+55,riverside,,coffee shop,no,Japanese,The Wrestlers,Raja Indian Cuisine,less than £20
+56,,,restaurant,no,Japanese,Loch Fyne,,
+57,,,,yes,Chinese,The Twenty Two,,
+58,riverside,,pub,,French,The Mill,,£20-25
+59,city centre,high,,no,,Blue Spice,,£20-25
+60,riverside,,pub,no,Japanese,The Olive Grove,,moderate
+61,,,pub,,English,The Cambridge Blue,Café Brazil,more than £30
+62,,,pub,,English,The Cambridge Blue,Café Brazil,high
+63,,,restaurant,yes,Italian,Loch Fyne,,less than £20
+64,riverside,3 out of 5,,no,French,The Rice Boat,Express by Holiday Inn,high
+65,riverside,high,coffee shop,yes,Italian,Browns Cambridge,Crowne Plaza Hotel,
+66,,,restaurant,no,,Travellers Rest Beefeater,,more than £30
+67,,5 out of 5,,,Japanese,Midsummer House,All Bar One,cheap
+68,,,pub,yes,French,The Dumpling Tree,The Portland Arms,
+69,,high,pub,,French,Wildwood,,£20-25
+70,city centre,low,,no,Japanese,The Waterman,,more than £30
+71,riverside,low,,yes,Indian,The Rice Boat,Express by Holiday Inn,less than £20
+72,,low,coffee shop,yes,Indian,The Cricketers,The Portland Arms,
+73,riverside,high,coffee shop,yes,,Blue Spice,Avalon,£20-25
+74,riverside,,,yes,Italian,Alimentum,,moderate
+75,,3 out of 5,coffee shop,no,French,The Punter,Café Sicilia,high
+76,riverside,5 out of 5,,,English,Alimentum,Yippee Noodle Bar,cheap
+77,city centre,,,yes,French,Green Man,All Bar One,more than £30
+78,riverside,low,,no,French,The Waterman,,less than £20
+79,,low,,yes,,Fitzbillies,Express by Holiday Inn,more than £30
+80,,,restaurant,yes,Italian,Loch Fyne,,
+81,city centre,5 out of 5,coffee shop,yes,Japanese,Fitzbillies,,cheap
+82,riverside,low,coffee shop,no,Japanese,Aromi,,
+83,city centre,,pub,,Japanese,The Mill,,more than £30
+84,riverside,5 out of 5,coffee shop,yes,French,The Eagle,Burger King,more than £30
+85,,1 out of 5,,no,French,The Wrestlers,,moderate
+86,,low,,no,Japanese,Cotto,Ranch,
+87,riverside,,,no,Indian,Alimentum,,less than £20
+88,,,,,French,Cotto,Café Rouge,
+89,,,restaurant,,English,The Dumpling Tree,,high
+90,city centre,average,coffee shop,yes,Fast food,The Eagle,Burger King,cheap
+91,,high,,,Indian,Browns Cambridge,,£20-25
+92,,average,restaurant,,,Strada,,
+93,,,,no,Fast food,The Twenty Two,,
+94,,,,yes,Italian,The Golden Curry,The Bakers,cheap
+95,riverside,high,,yes,English,The Rice Boat,,
+96,city centre,,,no,French,Alimentum,,moderate
+97,,3 out of 5,coffee shop,,Italian,Wildwood,Ranch,moderate
+98,,,restaurant,no,,The Plough,The Bakers,less than £20
+99,city centre,average,,yes,Fast food,The Waterman,,cheap
+100,riverside,3 out of 5,,,Fast food,The Phoenix,,
+101,riverside,,coffee shop,yes,Italian,The Wrestlers,Raja Indian Cuisine,cheap
+102,,,,,,Fitzbillies,Rainbow Vegetarian Café,cheap
+103,riverside,,pub,yes,Italian,The Olive Grove,,cheap
+104,city centre,average,,,Fast food,The Phoenix,,
+105,city centre,average,coffee shop,,Fast food,The Golden Palace,,high
+106,riverside,5 out of 5,coffee shop,,Italian,Cotto,The Portland Arms,cheap
+107,,,restaurant,yes,English,Loch Fyne,,moderate
+108,,low,,yes,Japanese,The Wrestlers,,less than £20
+109,riverside,low,coffee shop,yes,Italian,Browns Cambridge,Crowne Plaza Hotel,
+110,,average,,,Fast food,Midsummer House,All Bar One,cheap
+111,city centre,3 out of 5,,yes,Chinese,The Rice Boat,Express by Holiday Inn,moderate
+112,,average,,yes,Chinese,Cotto,Ranch,
+113,,1 out of 5,,yes,Italian,The Wrestlers,,moderate
+114,riverside,average,pub,,,Clowns,,high
+115,,,restaurant,,Japanese,The Dumpling Tree,,less than £20
+116,,high,,no,French,Strada,Rainbow Vegetarian Café,£20-25
+117,riverside,low,,,French,The Phoenix,,
+118,riverside,,coffee shop,yes,Fast food,The Wrestlers,Raja Indian Cuisine,less than £20
+119,,,restaurant,,French,The Dumpling Tree,,£20-25
+120,city centre,,coffee shop,,Indian,The Mill,The Sorrento,moderate
+121,,average,,,Japanese,Midsummer House,Café Rouge,
+122,riverside,,pub,,Chinese,The Mill,,more than £30
+123,,5 out of 5,pub,yes,,The Cricketers,Ranch,
+124,,5 out of 5,,yes,Italian,The Golden Curry,,
+125,riverside,5 out of 5,,no,Italian,The Rice Boat,Express by Holiday Inn,cheap
+126,riverside,5 out of 5,coffee shop,yes,,Blue Spice,Avalon,more than £30
+127,,,restaurant,yes,Indian,Loch Fyne,,more than £30
+128,,low,,no,,Strada,,less than £20
+129,riverside,,pub,,Italian,The Mill,,cheap
+130,,high,,,Chinese,Browns Cambridge,,more than £30
+131,,,restaurant,no,,Travellers Rest Beefeater,,moderate
+132,,5 out of 5,pub,,Chinese,Strada,Yippee Noodle Bar,
+133,,1 out of 5,,yes,French,The Golden Curry,,
+134,riverside,1 out of 5,,,French,Loch Fyne,The Rice Boat,
+135,city centre,high,,no,Japanese,The Rice Boat,Express by Holiday Inn,£20-25
+136,city centre,5 out of 5,,yes,French,The Waterman,,cheap
+137,,high,pub,,Japanese,Strada,Yippee Noodle Bar,
+138,,3 out of 5,coffee shop,yes,French,The Punter,Café Sicilia,high
+139,riverside,,pub,,Fast food,The Mill,,cheap
+140,riverside,3 out of 5,coffee shop,no,,Zizzi,,high
+141,riverside,,coffee shop,,Italian,The Mill,The Sorrento,moderate
+142,riverside,average,pub,,French,The Waterman,,
+143,,,restaurant,,Italian,The Dumpling Tree,,less than £20
+144,city centre,3 out of 5,,yes,Chinese,The Waterman,,moderate
+145,,5 out of 5,,,,The Rice Boat,Rainbow Vegetarian Café,more than £30
+146,,high,,yes,Chinese,The Wrestlers,,£20-25
+147,riverside,3 out of 5,coffee shop,,Italian,The Golden Palace,,moderate
+148,riverside,average,,,English,The Phoenix,,
+149,city centre,average,,,,The Eagle,,less than £20
+150,,1 out of 5,restaurant,,,Taste of Cambridge,,moderate
+151,riverside,3 out of 5,coffee shop,yes,,Zizzi,,moderate
+152,,1 out of 5,,no,Italian,The Wrestlers,,moderate
+153,riverside,average,,,Italian,The Phoenix,,cheap
+154,,average,,yes,,Fitzbillies,Express by Holiday Inn,cheap
+155,riverside,5 out of 5,,,French,Alimentum,Yippee Noodle Bar,more than £30
+156,,low,,no,Italian,The Wrestlers,,less than £20
+157,city centre,average,coffee shop,yes,Japanese,Browns Cambridge,Crowne Plaza Hotel,
+158,,1 out of 5,pub,yes,,The Cricketers,Ranch,
+159,,1 out of 5,coffee shop,yes,Italian,The Punter,Café Sicilia,moderate
+160,riverside,high,,no,Indian,The Rice Boat,Express by Holiday Inn,£20-25
+161,city centre,high,,,Fast food,The Phoenix,,£20-25
+162,city centre,,,,Italian,Bibimbap House,Clare Hall,high
+163,city centre,low,coffee shop,no,Japanese,Fitzbillies,,more than £30
+164,,,restaurant,yes,French,Loch Fyne,,more than £30
+165,riverside,,,,Italian,Blue Spice,,more than £30
+166,,low,coffee shop,no,Japanese,The Punter,Café Sicilia,less than £20
+167,city centre,,coffee shop,,Indian,The Mill,The Sorrento,less than £20
+168,riverside,low,,,Italian,The Phoenix,,less than £20
+169,riverside,,,,Chinese,The Rice Boat,,
+170,riverside,1 out of 5,coffee shop,yes,,Zizzi,,high
+171,riverside,1 out of 5,,yes,English,The Waterman,,moderate
+172,riverside,5 out of 5,,no,Fast food,The Waterman,,cheap
+173,riverside,,pub,no,Fast food,The Olive Grove,,less than £20
+174,riverside,3 out of 5,coffee shop,yes,French,Fitzbillies,,£20-25
+175,riverside,,,,Chinese,Blue Spice,,less than £20
+176,riverside,low,coffee shop,,Italian,The Golden Palace,,less than £20
+177,riverside,1 out of 5,,yes,Indian,The Golden Curry,Café Rouge,
+178,,low,,,,The Rice Boat,Rainbow Vegetarian Café,more than £30
+179,riverside,average,,,Italian,The Phoenix,,cheap
+180,riverside,average,,yes,Japanese,The Golden Curry,Café Rouge,
+181,riverside,,pub,,Fast food,The Mill,,high
+182,,,restaurant,yes,Chinese,Loch Fyne,,
+183,,,pub,yes,Italian,The Dumpling Tree,The Portland Arms,
+184,riverside,,,yes,Fast food,Green Man,All Bar One,moderate
+185,,high,,,,Browns Cambridge,,£20-25
+186,riverside,,,,Indian,Bibimbap House,The Rice Boat,
+187,,1 out of 5,coffee shop,yes,Japanese,Cocum,,moderate
+188,city centre,low,coffee shop,yes,Indian,Aromi,,
+189,,1 out of 5,pub,,English,Strada,Yippee Noodle Bar,
+190,riverside,1 out of 5,,,Italian,Alimentum,Yippee Noodle Bar,moderate
+191,city centre,5 out of 5,,,Fast food,Alimentum,Yippee Noodle Bar,cheap
+192,riverside,1 out of 5,coffee shop,yes,Indian,The Eagle,Burger King,high
+193,,,restaurant,yes,,Travellers Rest Beefeater,,high
+194,riverside,,,yes,Italian,Alimentum,,£20-25
+195,,3 out of 5,coffee shop,yes,French,The Punter,Café Sicilia,£20-25
+196,riverside,1 out of 5,coffee shop,,Japanese,The Golden Palace,,moderate
+197,,average,,yes,Indian,Strada,Rainbow Vegetarian Café,high
+198,city centre,,,,Chinese,Bibimbap House,Clare Hall,moderate
+199,riverside,low,coffee shop,yes,Italian,Aromi,,
+200,,average,,,,Browns Cambridge,,high
+201,riverside,average,coffee shop,yes,,Zizzi,,less than £20
+202,riverside,,,yes,,The Punter,The Portland Arms,cheap
+203,,,,no,French,The Golden Curry,The Bakers,less than £20
+204,riverside,1 out of 5,,no,Indian,The Waterman,,high
+205,,,restaurant,,Italian,The Dumpling Tree,,cheap
+206,,low,,yes,,Strada,,more than £30
+207,,5 out of 5,,,French,Midsummer House,Café Rouge,
+208,,high,,,Italian,Midsummer House,All Bar One,more than £30
+209,riverside,,coffee shop,no,Italian,The Wrestlers,Raja Indian Cuisine,less than £20
+210,city centre,low,coffee shop,,French,The Golden Palace,,more than £30
+211,,1 out of 5,coffee shop,no,Indian,Cocum,,moderate
+212,riverside,,pub,yes,Fast food,The Olive Grove,,£20-25
+213,city centre,5 out of 5,,,Japanese,Loch Fyne,The Rice Boat,
+214,,1 out of 5,,,Italian,Midsummer House,All Bar One,high
+215,riverside,5 out of 5,,yes,French,The Rice Boat,Express by Holiday Inn,cheap
+216,riverside,,,no,Indian,Green Man,All Bar One,less than £20
+217,riverside,,pub,,Japanese,Green Man,Café Rouge,
+218,,,pub,yes,English,The Plough,Café Rouge,high
+219,city centre,low,,yes,,The Twenty Two,The Rice Boat,more than £30
+220,,high,pub,yes,,Cocum,,more than £30
+221,,low,,yes,English,The Wrestlers,,less than £20
+222,riverside,low,,yes,Italian,The Rice Boat,,
+223,city centre,high,,yes,Chinese,The Rice Boat,Express by Holiday Inn,more than £30
+224,riverside,5 out of 5,coffee shop,,Japanese,Cotto,The Portland Arms,more than £30
+225,,average,,,Chinese,Browns Cambridge,,high
+226,,,,,French,The Punter,,£20-25
+227,riverside,average,,,Chinese,Alimentum,Yippee Noodle Bar,high
+228,,1 out of 5,coffee shop,no,Indian,The Punter,Café Sicilia,high
+229,,,pub,no,English,The Plough,Café Rouge,high
+230,,1 out of 5,,no,Indian,The Wrestlers,,high
+231,,low,restaurant,,English,The Cambridge Blue,,
+232,,low,coffee shop,,Indian,Wildwood,Ranch,less than £20
+233,riverside,1 out of 5,,yes,,The Twenty Two,The Rice Boat,high
+234,,5 out of 5,pub,yes,Italian,Zizzi,,
+235,riverside,1 out of 5,,yes,Japanese,The Golden Curry,Café Rouge,
+236,,high,,yes,Japanese,Cotto,Ranch,
+237,,,,no,Fast food,The Twenty Two,,
+238,,,,,Chinese,Fitzbillies,The Six Bells,high
+239,,5 out of 5,pub,yes,,Cocum,,cheap
+240,riverside,average,coffee shop,,Fast food,Clowns,Clare Hall,
+241,riverside,high,,yes,Indian,The Rice Boat,Express by Holiday Inn,more than £30
+242,riverside,1 out of 5,coffee shop,,Indian,Cotto,The Portland Arms,high
+243,,3 out of 5,coffee shop,,Japanese,Wildwood,Ranch,£20-25
+244,riverside,high,,yes,Chinese,The Waterman,,£20-25
+245,,low,,yes,French,Strada,Rainbow Vegetarian Café,more than £30
+246,riverside,5 out of 5,,,French,Loch Fyne,The Rice Boat,
+247,riverside,,pub,,,The Golden Palace,Rainbow Vegetarian Café,less than £20
+248,,low,coffee shop,yes,Japanese,The Punter,Café Sicilia,more than £30
+249,,3 out of 5,,,Japanese,Midsummer House,Café Rouge,
+250,riverside,5 out of 5,coffee shop,,Fast food,Cotto,The Portland Arms,cheap
+251,,,restaurant,,,Giraffe,The Six Bells,cheap
+252,riverside,5 out of 5,,yes,Chinese,The Rice Boat,,
+253,city centre,1 out of 5,,yes,Fast food,The Waterman,,moderate
+254,riverside,high,,no,French,The Waterman,,£20-25
+255,city centre,3 out of 5,,no,Italian,The Rice Boat,Express by Holiday Inn,moderate
+256,,,,no,English,The Golden Curry,The Bakers,moderate
+257,riverside,3 out of 5,,yes,,The Twenty Two,The Rice Boat,moderate
+258,,,restaurant,no,English,Loch Fyne,,moderate
+259,riverside,,,yes,French,Browns Cambridge,The Sorrento,
+260,riverside,1 out of 5,coffee shop,yes,French,Aromi,,
+261,,,restaurant,yes,Indian,Loch Fyne,,moderate
+262,,3 out of 5,pub,yes,English,Zizzi,,
+263,city centre,high,,no,Indian,The Rice Boat,Express by Holiday Inn,£20-25
+264,riverside,3 out of 5,,no,French,The Rice Boat,Express by Holiday Inn,high
+265,,5 out of 5,,,English,Browns Cambridge,,cheap
+266,,average,coffee shop,yes,French,Cocum,,less than £20
+267,,high,,no,English,Strada,Rainbow Vegetarian Café,more than £30
+268,city centre,,,,Fast food,The Rice Boat,,
+269,city centre,,pub,no,French,Giraffe,,
+270,,,,,Fast food,Fitzbillies,The Six Bells,£20-25
+271,city centre,,,no,Italian,Alimentum,,high
+272,,,,no,Fast food,The Twenty Two,,
+273,riverside,high,,yes,Italian,The Waterman,,more than £30
+274,riverside,,,,English,Bibimbap House,The Rice Boat,
+275,city centre,,restaurant,,Indian,Aromi,,
+276,riverside,,pub,no,Indian,The Olive Grove,,less than £20
+277,city centre,average,,,Indian,The Phoenix,,cheap
+278,,,restaurant,yes,,Wildwood,,
+279,city centre,5 out of 5,coffee shop,no,French,Aromi,,
+280,,average,,yes,English,Strada,Rainbow Vegetarian Café,cheap
+281,,,pub,yes,Italian,The Plough,Café Rouge,less than £20
+282,city centre,,,no,English,Green Man,All Bar One,less than £20
+283,,5 out of 5,restaurant,,French,The Cambridge Blue,,
+284,city centre,low,pub,,French,The Waterman,,
+285,riverside,3 out of 5,,,Chinese,Loch Fyne,The Rice Boat,
+286,,,pub,no,English,The Plough,Café Rouge,less than £20
+287,,,restaurant,yes,Fast food,Loch Fyne,,less than £20
+288,riverside,high,coffee shop,,English,Cotto,The Portland Arms,more than £30
+289,city centre,1 out of 5,,,Fast food,Alimentum,Yippee Noodle Bar,high
+290,riverside,low,coffee shop,yes,Japanese,Browns Cambridge,Crowne Plaza Hotel,
+291,riverside,average,,yes,Italian,The Rice Boat,Express by Holiday Inn,high
+292,,low,,no,Italian,The Golden Curry,,
+293,,5 out of 5,coffee shop,,French,Wildwood,Ranch,cheap
+294,,5 out of 5,restaurant,,Fast food,The Cambridge Blue,,
+295,,1 out of 5,,,Japanese,Midsummer House,Café Rouge,
+296,,average,,no,English,The Wrestlers,,cheap
+297,city centre,3 out of 5,,no,Japanese,The Waterman,,£20-25
+298,,5 out of 5,,,French,The Eagle,,
+299,,average,coffee shop,yes,Fast food,The Cricketers,The Portland Arms,
+300,riverside,3 out of 5,,no,Italian,The Waterman,,moderate
+301,city centre,,coffee shop,yes,,The Dumpling Tree,Café Sicilia,less than £20
+302,riverside,5 out of 5,coffee shop,,,The Vaults,Café Brazil,cheap
+303,,,,,French,Fitzbillies,The Six Bells,£20-25
+304,city centre,1 out of 5,coffee shop,,Indian,The Golden Palace,,high
+305,riverside,high,,no,Italian,The Rice Boat,Express by Holiday Inn,£20-25
+306,riverside,,,,Chinese,Bibimbap House,Clare Hall,high
+307,,3 out of 5,coffee shop,yes,Indian,The Punter,Café Sicilia,moderate
+308,,3 out of 5,,yes,English,The Golden Curry,,
+309,riverside,average,,,Fast food,The Phoenix,,high
+310,riverside,1 out of 5,,,,Travellers Rest Beefeater,Café Adriatic,moderate
+311,,5 out of 5,,,Indian,Browns Cambridge,,cheap
+312,,,,no,Fast food,The Vaults,,less than £20
+313,city centre,,pub,,English,The Mill,,high
+314,riverside,3 out of 5,coffee shop,,Japanese,Cotto,The Portland Arms,high
+315,city centre,1 out of 5,coffee shop,yes,Italian,Fitzbillies,,high
+316,,,restaurant,,Italian,The Dumpling Tree,,cheap
+317,,1 out of 5,coffee shop,no,French,Cocum,,moderate
+318,,3 out of 5,coffee shop,yes,Italian,Cocum,,moderate
+319,city centre,average,,yes,,Blue Spice,,less than £20
+320,city centre,high,coffee shop,no,Fast food,Fitzbillies,,£20-25
+321,riverside,3 out of 5,coffee shop,yes,French,Aromi,,
+322,riverside,average,,yes,English,The Rice Boat,Express by Holiday Inn,cheap
+323,riverside,,pub,yes,English,The Olive Grove,,moderate
+324,riverside,,,yes,French,The Twenty Two,,
+325,city centre,average,,yes,Chinese,The Waterman,,high
+326,,,pub,yes,Chinese,The Dumpling Tree,The Portland Arms,
+327,riverside,3 out of 5,,,Indian,The Phoenix,,
+328,riverside,high,,no,Japanese,The Waterman,,£20-25
+329,,low,pub,yes,English,Zizzi,,
+330,city centre,average,coffee shop,no,French,The Eagle,Burger King,less than £20
+331,riverside,average,,no,Italian,The Rice Boat,Express by Holiday Inn,cheap
+332,,3 out of 5,,,Fast food,Browns Cambridge,,£20-25
+333,riverside,3 out of 5,,,French,Alimentum,Yippee Noodle Bar,£20-25
+334,city centre,average,,no,English,The Waterman,,high
+335,riverside,,pub,no,French,Giraffe,,
+336,city centre,average,,,Indian,Alimentum,Yippee Noodle Bar,cheap
+337,city centre,average,,yes,Chinese,The Waterman,,cheap
+338,city centre,1 out of 5,coffee shop,no,French,The Eagle,Burger King,moderate
+339,,,,,English,The Punter,,moderate
+340,city centre,1 out of 5,coffee shop,,,The Vaults,Café Brazil,moderate
+341,riverside,5 out of 5,,,Italian,The Phoenix,,cheap
+342,city centre,5 out of 5,coffee shop,no,French,Browns Cambridge,Crowne Plaza Hotel,
+343,riverside,5 out of 5,,no,Chinese,The Waterman,,cheap
+344,,,,yes,Italian,The Waterman,Crowne Plaza Hotel,
+345,,3 out of 5,coffee shop,yes,French,The Punter,Café Sicilia,£20-25
+346,riverside,1 out of 5,coffee shop,,,The Vaults,Café Brazil,moderate
+347,city centre,3 out of 5,,,Chinese,Alimentum,Yippee Noodle Bar,moderate
+348,city centre,average,,no,English,The Rice Boat,Express by Holiday Inn,cheap
+349,,average,restaurant,yes,,Cocum,,
+350,riverside,,,yes,,Green Man,,moderate
+351,,5 out of 5,,no,Indian,Strada,Rainbow Vegetarian Café,cheap
+352,riverside,,coffee shop,,Indian,The Mill,The Sorrento,cheap
+353,city centre,,,,English,Bibimbap House,Clare Hall,moderate
+354,riverside,1 out of 5,,,Italian,Loch Fyne,The Rice Boat,
+355,,low,pub,,Fast food,Wildwood,,less than £20
+356,city centre,low,coffee shop,no,Japanese,Fitzbillies,,more than £30
+357,riverside,,,,French,Blue Spice,,more than £30
+358,city centre,,,,French,Bibimbap House,The Rice Boat,
+359,,,restaurant,yes,,Travellers Rest Beefeater,,£20-25
+360,city centre,low,,yes,Japanese,The Rice Boat,,
+361,city centre,3 out of 5,coffee shop,no,Indian,The Eagle,Burger King,moderate
+362,riverside,low,coffee shop,no,Fast food,The Eagle,Burger King,less than £20
+363,,1 out of 5,,,Fast food,The Eagle,,
+364,,high,,,Japanese,The Eagle,,
+365,city centre,3 out of 5,coffee shop,,Japanese,Cotto,The Portland Arms,high
+366,city centre,,,no,Chinese,Alimentum,,less than £20
+367,,low,coffee shop,yes,French,Cocum,,more than £30
+368,riverside,,pub,yes,French,Giraffe,,
+369,city centre,1 out of 5,coffee shop,yes,Fast food,The Eagle,Burger King,high
+370,riverside,5 out of 5,,yes,Fast food,The Waterman,,cheap
+371,,5 out of 5,coffee shop,no,Indian,The Cricketers,The Portland Arms,
+372,riverside,average,pub,,,The Twenty Two,Café Sicilia,
+373,,high,,,Chinese,Midsummer House,All Bar One,£20-25
+374,riverside,average,,yes,Fast food,The Waterman,,high
+375,riverside,3 out of 5,coffee shop,,,The Vaults,Café Brazil,moderate
+376,,5 out of 5,coffee shop,no,Japanese,Cocum,,cheap
+377,,,pub,,Japanese,The Cambridge Blue,Café Brazil,less than £20
+378,riverside,,coffee shop,yes,Italian,Taste of Cambridge,Crowne Plaza Hotel,
+379,riverside,,pub,,Italian,The Mill,,high
+380,riverside,1 out of 5,,yes,,Blue Spice,,high
+381,city centre,,,no,Japanese,Browns Cambridge,The Sorrento,
+382,,1 out of 5,,,English,Midsummer House,All Bar One,moderate
+383,city centre,5 out of 5,coffee shop,,Italian,Clowns,Clare Hall,
+384,riverside,1 out of 5,,,Italian,The Phoenix,,
+385,riverside,average,,yes,Italian,The Rice Boat,,
+386,city centre,5 out of 5,coffee shop,yes,Italian,Browns Cambridge,Crowne Plaza Hotel,
+387,,3 out of 5,,yes,French,Strada,Rainbow Vegetarian Café,£20-25
+388,city centre,,pub,no,French,The Olive Grove,,less than £20
+389,riverside,,pub,,French,The Mill,,moderate
+390,,high,,yes,Fast food,Cotto,Ranch,
+391,,high,,yes,Japanese,Cotto,Ranch,
+392,city centre,,,,,Cotto,All Bar One,less than £20
+393,city centre,,restaurant,yes,,The Olive Grove,,
+394,city centre,high,coffee shop,yes,,Blue Spice,Avalon,£20-25
+395,riverside,3 out of 5,coffee shop,,Japanese,Cotto,The Portland Arms,high
+396,riverside,average,,,,Travellers Rest Beefeater,Café Adriatic,less than £20
+397,,high,,yes,Indian,The Golden Curry,,
+398,riverside,,,,Japanese,Blue Spice,,more than £30
+399,,,,no,English,The Golden Curry,The Bakers,high
+400,riverside,,,yes,Chinese,Alimentum,,£20-25
+401,riverside,,coffee shop,yes,Japanese,The Wrestlers,Raja Indian Cuisine,moderate
+402,riverside,average,pub,,English,The Waterman,,
+403,city centre,,,yes,French,Green Man,All Bar One,less than £20
+404,city centre,,coffee shop,yes,Indian,The Wrestlers,Raja Indian Cuisine,moderate
+405,city centre,average,,,Indian,The Phoenix,,
+406,,3 out of 5,,,Italian,The Eagle,,
+407,,low,,yes,Indian,The Golden Curry,,
+408,riverside,,pub,no,Italian,The Olive Grove,,high
+409,riverside,5 out of 5,restaurant,,,The Golden Palace,,
+410,city centre,low,coffee shop,no,Italian,Browns Cambridge,Crowne Plaza Hotel,
+411,,,,yes,Italian,The Golden Curry,The Bakers,less than £20
+412,,average,coffee shop,no,French,Cocum,,less than £20
+413,,3 out of 5,,yes,Indian,Cotto,Ranch,
+414,,,restaurant,yes,,The Plough,Express by Holiday Inn,
+415,riverside,3 out of 5,,no,English,The Waterman,,moderate
+416,,average,,yes,English,Strada,Rainbow Vegetarian Café,high
+417,,1 out of 5,coffee shop,no,Fast food,The Punter,Café Sicilia,moderate
+418,,low,,yes,,Fitzbillies,Express by Holiday Inn,more than £30
+419,riverside,1 out of 5,pub,yes,,Aromi,,
+420,,average,,,Italian,Midsummer House,All Bar One,high
+421,,high,,yes,Italian,The Wrestlers,,£20-25
+422,,low,,yes,Indian,Strada,Rainbow Vegetarian Café,less than £20
+423,riverside,3 out of 5,coffee shop,yes,French,The Eagle,Burger King,£20-25
+424,riverside,5 out of 5,pub,,Fast food,The Waterman,,
+425,,1 out of 5,,,Indian,Midsummer House,All Bar One,moderate
+426,,average,coffee shop,yes,,Giraffe,The Bakers,cheap
+427,,average,,no,Chinese,The Wrestlers,,cheap
+428,,average,coffee shop,yes,Fast food,The Punter,Café Sicilia,high
+429,city centre,3 out of 5,,,French,The Phoenix,,high
+430,city centre,high,,no,English,The Waterman,,more than £30
+431,,low,pub,,Japanese,Strada,Yippee Noodle Bar,
+432,city centre,average,coffee shop,,Japanese,The Golden Palace,,less than £20
+433,riverside,,coffee shop,,Fast food,The Mill,The Sorrento,moderate
+434,city centre,3 out of 5,,,French,Alimentum,Yippee Noodle Bar,£20-25
+435,,low,coffee shop,yes,Italian,Cocum,,less than £20
+436,riverside,1 out of 5,coffee shop,no,Japanese,The Eagle,Burger King,moderate
+437,riverside,,pub,,Indian,The Mill,,more than £30
+438,,,,,Italian,The Punter,,moderate
+439,city centre,3 out of 5,coffee shop,yes,Japanese,The Eagle,Burger King,high
+440,riverside,5 out of 5,coffee shop,,French,Cotto,The Portland Arms,more than £30
+441,riverside,average,,,Italian,Loch Fyne,The Rice Boat,
+442,city centre,,pub,no,English,The Olive Grove,,less than £20
+443,riverside,,,,Japanese,The Rice Boat,,
+444,city centre,5 out of 5,,no,Chinese,The Rice Boat,,
+445,riverside,5 out of 5,coffee shop,,Japanese,Clowns,Clare Hall,
+446,riverside,,coffee shop,,Indian,The Mill,The Sorrento,moderate
+447,,,restaurant,,French,The Dumpling Tree,,high
+448,,,,,Italian,The Punter,,high
+449,,,pub,yes,French,The Dumpling Tree,The Portland Arms,
+450,riverside,,pub,yes,Japanese,Giraffe,,
+451,riverside,average,,yes,English,The Rice Boat,,
+452,,low,coffee shop,no,Indian,Cocum,,less than £20
+453,city centre,1 out of 5,pub,,,Clowns,,moderate
+454,,,,no,French,The Golden Curry,The Bakers,moderate
+455,riverside,average,,,Chinese,Loch Fyne,The Rice Boat,
+456,riverside,,,no,,The Punter,The Portland Arms,less than £20
+457,city centre,average,pub,,,Clowns,,less than £20
+458,city centre,5 out of 5,coffee shop,no,French,Fitzbillies,,cheap
+459,,,pub,yes,Fast food,The Dumpling Tree,The Portland Arms,
+460,riverside,,,no,English,Alimentum,,high
+461,riverside,5 out of 5,coffee shop,no,,Blue Spice,Avalon,cheap
+462,,average,pub,,Chinese,Wildwood,,cheap
+463,riverside,,pub,yes,Japanese,The Olive Grove,,cheap
+464,riverside,high,coffee shop,yes,French,The Eagle,Burger King,£20-25
+465,riverside,,pub,,French,The Mill,,high
+466,,,,yes,Japanese,The Golden Curry,The Bakers,less than £20
+467,riverside,,,yes,Fast food,Green Man,All Bar One,moderate
+468,,average,,,English,Midsummer House,All Bar One,cheap
+469,riverside,low,,,English,The Phoenix,,less than £20
+470,,5 out of 5,,yes,Chinese,Strada,Rainbow Vegetarian Café,cheap
+471,riverside,1 out of 5,coffee shop,,Indian,The Golden Palace,,moderate
+472,,,,yes,Italian,The Vaults,,cheap
+473,,5 out of 5,pub,yes,French,Zizzi,,
+474,riverside,5 out of 5,,,English,The Phoenix,,cheap
+475,city centre,,coffee shop,,Indian,The Mill,The Sorrento,less than £20
+476,city centre,low,coffee shop,yes,,Blue Spice,Avalon,less than £20
+477,riverside,average,,,Indian,Loch Fyne,The Rice Boat,
+478,,low,,,Fast food,Midsummer House,Café Rouge,
+479,,1 out of 5,,yes,French,Cotto,Ranch,
+480,riverside,3 out of 5,,,,The Eagle,,£20-25
+481,riverside,,pub,yes,Italian,The Olive Grove,,£20-25
+482,,low,,no,French,The Wrestlers,,less than £20
+483,riverside,5 out of 5,coffee shop,no,French,Browns Cambridge,Crowne Plaza Hotel,
+484,city centre,,coffee shop,yes,Japanese,The Wrestlers,Raja Indian Cuisine,moderate
+485,city centre,average,coffee shop,no,,Zizzi,,less than £20
+486,,low,,,Indian,The Eagle,,
+487,,3 out of 5,,no,Indian,The Wrestlers,,moderate
+488,riverside,,,,,Blue Spice,,high
+489,,,restaurant,yes,Indian,Loch Fyne,,less than £20
+490,city centre,3 out of 5,coffee shop,,French,The Golden Palace,,high
+491,,1 out of 5,restaurant,,,Taste of Cambridge,,moderate
+492,,average,,yes,Italian,Strada,Rainbow Vegetarian Café,high
+493,riverside,5 out of 5,,,Fast food,The Phoenix,,
+494,city centre,1 out of 5,,no,Fast food,The Rice Boat,Express by Holiday Inn,high
+495,,low,coffee shop,yes,Japanese,Cocum,,more than £30
+496,,low,,yes,French,Cotto,Ranch,
+497,,average,,,Italian,Browns Cambridge,,cheap
+498,,1 out of 5,,,Indian,Browns Cambridge,,moderate
+499,,,restaurant,no,French,Loch Fyne,,moderate
+500,city centre,3 out of 5,coffee shop,yes,,Blue Spice,Avalon,high
+501,,high,coffee shop,yes,Italian,Cocum,,more than £30
+502,,high,pub,yes,Chinese,Zizzi,,
+503,riverside,,pub,no,English,Giraffe,,
+504,riverside,,,no,Fast food,Browns Cambridge,The Sorrento,
+505,,3 out of 5,coffee shop,yes,Japanese,The Cricketers,The Portland Arms,
+506,city centre,5 out of 5,,no,,Blue Spice,,more than £30
+507,,,pub,yes,Fast food,The Dumpling Tree,The Portland Arms,
+508,riverside,,coffee shop,yes,Italian,Taste of Cambridge,Crowne Plaza Hotel,
+509,city centre,1 out of 5,,yes,Chinese,The Rice Boat,Express by Holiday Inn,moderate
+510,riverside,,,yes,Fast food,Alimentum,,high
+511,,high,,no,French,Strada,Rainbow Vegetarian Café,£20-25
+512,city centre,average,,,English,Alimentum,Yippee Noodle Bar,high
+513,riverside,average,,yes,French,The Rice Boat,Express by Holiday Inn,less than £20
+514,,average,coffee shop,,Fast food,Wildwood,Ranch,cheap
+515,,,,yes,French,The Vaults,,£20-25
+516,riverside,5 out of 5,coffee shop,,Indian,The Golden Palace,,cheap
+517,,low,pub,,French,Wildwood,,more than £30
+518,riverside,low,,yes,English,The Golden Curry,Café Rouge,
+519,,3 out of 5,restaurant,yes,,Cocum,,
+520,riverside,5 out of 5,coffee shop,yes,Japanese,The Eagle,Burger King,more than £30
+521,,average,,yes,Italian,The Wrestlers,,high
+522,city centre,5 out of 5,coffee shop,no,,Blue Spice,Avalon,cheap
+523,,,,no,Japanese,The Golden Curry,The Bakers,less than £20
+524,riverside,,restaurant,yes,,The Olive Grove,,
+525,city centre,,coffee shop,no,Indian,The Wrestlers,Raja Indian Cuisine,less than £20
+526,,low,,yes,Japanese,Cotto,Ranch,
+527,city centre,high,,no,Fast food,The Rice Boat,Express by Holiday Inn,more than £30
+528,,high,,yes,English,The Wrestlers,,£20-25
+529,riverside,1 out of 5,,,Italian,Alimentum,Yippee Noodle Bar,moderate
+530,city centre,,,no,Japanese,Alimentum,,moderate
+531,riverside,average,,yes,Italian,The Rice Boat,Express by Holiday Inn,cheap
+532,,3 out of 5,coffee shop,yes,Indian,The Punter,Café Sicilia,moderate
+533,,,,,English,Fitzbillies,The Six Bells,moderate
+534,riverside,,,yes,French,Alimentum,,more than £30
+535,city centre,average,coffee shop,,Italian,Cotto,The Portland Arms,high
+536,riverside,,,no,Japanese,The Twenty Two,,
+537,riverside,,,yes,Japanese,Browns Cambridge,The Sorrento,
+538,,,,,French,Fitzbillies,The Six Bells,more than £30
+539,city centre,,,no,Chinese,Green Man,All Bar One,moderate
+540,riverside,high,coffee shop,,Italian,Cotto,The Portland Arms,£20-25
+541,,,,,Japanese,Cotto,Café Rouge,
+542,,5 out of 5,,yes,,Strada,,more than £30
+543,riverside,low,,no,Chinese,The Rice Boat,Express by Holiday Inn,less than £20
+544,,1 out of 5,coffee shop,yes,Italian,Cocum,,high
+545,city centre,average,,,Fast food,Alimentum,Yippee Noodle Bar,high
+546,,low,,,Japanese,Midsummer House,All Bar One,less than £20
+547,,3 out of 5,coffee shop,no,French,The Punter,Café Sicilia,high
+548,riverside,average,,yes,Italian,The Golden Curry,Café Rouge,
+549,riverside,,,,English,Blue Spice,,high
+550,riverside,average,,yes,Indian,The Waterman,,cheap
+551,city centre,,coffee shop,no,Fast food,The Wrestlers,Raja Indian Cuisine,less than £20
+552,riverside,low,,,Fast food,Loch Fyne,The Rice Boat,
+553,riverside,high,coffee shop,,,The Vaults,Café Brazil,more than £30
+554,riverside,1 out of 5,coffee shop,,Fast food,The Golden Palace,,high
+555,city centre,low,,yes,French,The Golden Curry,Café Rouge,
+556,,1 out of 5,,no,Italian,Strada,Rainbow Vegetarian Café,high
+557,,low,pub,no,Fast food,Zizzi,,
+558,,3 out of 5,,,English,Browns Cambridge,,moderate
+559,,5 out of 5,,yes,,Fitzbillies,Express by Holiday Inn,cheap
+560,,,restaurant,,Indian,The Dumpling Tree,,less than £20
+561,riverside,5 out of 5,coffee shop,yes,French,Aromi,,
+562,,low,pub,,Japanese,Wildwood,,less than £20
+563,,average,coffee shop,no,French,The Punter,Café Sicilia,less than £20
+564,riverside,1 out of 5,,no,English,The Waterman,,moderate
+565,,3 out of 5,,yes,French,Strada,Rainbow Vegetarian Café,£20-25
+566,,average,,yes,,Fitzbillies,Express by Holiday Inn,high
+567,riverside,,,,Japanese,Bibimbap House,Clare Hall,£20-25
+568,riverside,,,yes,English,The Twenty Two,,
+569,riverside,,,yes,Italian,Green Man,All Bar One,more than £30
+570,,,restaurant,yes,Italian,Loch Fyne,,moderate
+571,riverside,,,yes,Fast food,Alimentum,,£20-25
+572,,low,pub,,,The Vaults,Café Adriatic,more than £30
+573,city centre,low,,yes,Italian,The Rice Boat,Express by Holiday Inn,less than £20
+574,city centre,5 out of 5,coffee shop,yes,Indian,Aromi,,
+575,city centre,low,coffee shop,,Fast food,The Golden Palace,,less than £20
+576,riverside,average,coffee shop,,Fast food,Clowns,Clare Hall,
+577,riverside,,pub,yes,French,Giraffe,,
+578,riverside,high,,no,Chinese,The Rice Boat,Express by Holiday Inn,more than £30
+579,riverside,,,yes,English,Green Man,All Bar One,moderate
+580,riverside,3 out of 5,coffee shop,no,Japanese,The Eagle,Burger King,high
+581,city centre,5 out of 5,,no,Japanese,The Waterman,,more than £30
+582,,average,coffee shop,no,Indian,The Punter,Café Sicilia,cheap
+583,,,,yes,Chinese,The Golden Curry,The Bakers,moderate
+584,,low,coffee shop,no,French,The Punter,Café Sicilia,less than £20
+585,,5 out of 5,restaurant,,Japanese,The Cambridge Blue,,
+586,riverside,low,coffee shop,no,Italian,Browns Cambridge,Crowne Plaza Hotel,
+587,,low,pub,,Japanese,Strada,Yippee Noodle Bar,
+588,city centre,,pub,,,The Golden Palace,Rainbow Vegetarian Café,more than £30
+589,,high,,yes,,Strada,,more than £30
+590,,5 out of 5,,,,Browns Cambridge,,more than £30
+591,,5 out of 5,pub,,English,Strada,Yippee Noodle Bar,
+592,riverside,1 out of 5,coffee shop,yes,,Zizzi,,moderate
+593,,,,yes,Chinese,The Golden Curry,The Bakers,less than £20
+594,,3 out of 5,,yes,Indian,The Wrestlers,,moderate
+595,riverside,high,coffee shop,yes,Japanese,Browns Cambridge,Crowne Plaza Hotel,
+596,riverside,1 out of 5,,no,English,The Rice Boat,Express by Holiday Inn,moderate
+597,,low,,,Fast food,Browns Cambridge,,less than £20
+598,city centre,5 out of 5,restaurant,,,The Golden Palace,,
+599,,3 out of 5,pub,,French,Strada,Yippee Noodle Bar,

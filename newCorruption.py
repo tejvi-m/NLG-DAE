@@ -1,6 +1,6 @@
 import spacy
 import numpy as np
-import pandas
+import pandas as pd
 import utils
 nlp = spacy.load("en_core_web_sm")
 
@@ -67,10 +67,28 @@ def newCorrupt(sentence):
 
     return curroptedS
 
-cor = trainset['ref'].apply(lambda x: newCorrupt(x))
-trainset = trainset.assign(corrupted=cor)
-as_tokens = trainset['corrupted'].apply(lambda x: [test(each) for each in x.split()])
-trainset = trainset.assign(tokenized_corrupted=as_tokens)
+if __name__ == "__main__":
+
+    trainset = pd.read_csv('./data/trainset.csv')
+    cor = trainset['ref'].apply(lambda x: newCorrupt(x))
+    trainset = trainset.assign(corrupted=cor)
+    as_tokens = trainset['corrupted'].apply(lambda x: [test(each) for each in x.split()])
+    trainset = trainset.assign(tokenized_corrupted=as_tokens)
 
 
-trainset.to_csv('./data/processedTrainset.csv')
+    trainset.to_csv('./data/processedTrainset.csv')
+
+
+
+
+
+#
+#
+# sentence = ""
+# import spacy
+#
+# nlp = spacy.load("en_core_web_sm")
+# doc = nlp(sentence)
+#
+# for ent in doc.ents:
+#     print(ent.text, ent.start_char, ent.end_char, ent.label_)

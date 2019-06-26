@@ -8,6 +8,11 @@ import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
+from model import *
+import pandas as pd
+import numpy as np
+from utilsNER import *
+import utils
 
 
 def test(x):
@@ -25,10 +30,32 @@ def test(x):
         except:
             print(x)
 
-trainset = pd.DataFrame()
+def dataloader(dataset, p_drop=0.6, max_length=50):
 
-trainset = pd.read_csv('drive/app/NLG/processedTrainset.csv', lineterminator='\n')
 
+    shuffled = [utils.shuffle(seq, cor_seq) for seq, cor_seq in zip(trainset['tokenized'], trainset['corrupted_tokenized'] )]
+
+    for shuffled_seq, original_seq in zip(shuffled, trainset['tokenized']):
+        # need to make sure our input_tensors have at least one element
+        if len(shuffled_seq) == 0:
+            shuffled_seq = [original_seq[np.random.randint(0, len(original_seq))]]
+
+        try:
+          input_tensor = torch.Tensor(shuffled_seq).view(-1, 1).type(torch.LongTensor)
+        except:
+          input_tensor = original_seq.copy()
+          input_tensor = torch.Tensor(input_tensor).view(-1, 1).type(torch.LongTensor)
+
+        # Append <EOS> token to the end of original sequence
+        target = original_seq.copy()
+        target.append(1)
+        target_tensor = torch.Tensor(target).view(-1, 1).type(torch.LongTensor)
+
+        yield input_tensor, target_tensor
+
+
+trainset = pd.read_csv('./data/processedTrainset.csv', lineterminator='\n')
+trainset = trainset.assign(clean=utils.replace_punctuation(trainset['ref']))
 vocab_to_int, int_to_vocab = utils.get_tokens(trainset['clean'])
 
 as_tokens = trainset['clean'].apply(lambda x: [vocab_to_int[each] for each in x.split()])
@@ -40,7 +67,7 @@ trainset = trainset.assign(corrupted_tokenized=as_tokens)
 
 def train(dataset, encoder, decoder, enc_opt, dec_opt, criterion,
           max_length=50, print_every=1000, plot_every=100,
-          teacher_forcing=0.5, device=None):
+          teacher_forcing=0.5, save_every = 100, device=None):
 
     if device is None:
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -121,11 +148,15 @@ def train(dataset, encoder, decoder, enc_opt, dec_opt, criterion,
             print("target: ", list3)
 
         print("steps: ", steps)
-        if steps%5000 == 0:
-            torch.save(encoder, "drive/app/NERnlgenc.pth")
-            torch.save(decoder, "drive/app/NERnlgdec.pth")
+        if steps% save_every == 0:
+            torch.save(encoder, "NERnlgenc.pth")
+            torch.save(decoder, "NERnlgdec.pth")
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+#device is cpu because i dont have cuda set up right. change it to the following to use a gpu
+# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = "cpu"
+
+
 
 # max length for attention
 max_length = 50
@@ -146,5 +177,5 @@ epochs = 10
 for e in range(1, epochs+1):
     print(f"Starting epoch {e}")
     train(trainset['tokenized'], encoder, decoder, enc_opt, dec_opt, criterion,
-          teacher_forcing=0.9/e, device=device, print_every=200, save_every=1000,
+          teacher_forcing=0.9/e, device=device, print_every=1, save_every=100,
           max_length=max_length)

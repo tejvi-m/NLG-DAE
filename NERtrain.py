@@ -13,7 +13,7 @@ import pandas as pd
 import numpy as np
 from utilsNER import *
 import utils
-
+import os
 
 def test(x):
 
@@ -175,6 +175,12 @@ if os.path.isfile('NERnlgenc.pth') and os.path.isfile('NERnlgdec.pth'):
 epochs = 10
 
 for e in range(1, epochs+1):
+
+    if os.path.exists("./nlgenc.pth"):
+        print("found model weights. continuing training.0")
+        encoder = torch.load("nlgenc.pth", map_location = 'cpu')
+        decoder = torch.load("nlgdec.pth", map_location = 'cpu')
+
     print(f"Starting epoch {e}")
     train(trainset['tokenized'], encoder, decoder, enc_opt, dec_opt, criterion,
           teacher_forcing=0.9/e, device=device, print_every=1, save_every=100,

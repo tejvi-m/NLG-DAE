@@ -8,7 +8,11 @@ import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
-
+import pandas as pd
+import utils
+from model import *
+import utilsNER
+import numpy as np
 
 def dataloader(dataset, p_drop=0.6, max_length=50):
 
@@ -32,7 +36,7 @@ def dataloader(dataset, p_drop=0.6, max_length=50):
         yield input_tensor, target_tensor
 
 def train(dataset, encoder, decoder, enc_opt, dec_opt, criterion,
-          max_length=50, print_every=1000, plot_every=100, save_every=5000,
+          max_length=50, print_every=1, plot_every=100, save_every=5000,
           teacher_forcing=0.5, device=None):
 
     if device is None:
@@ -97,7 +101,7 @@ def train(dataset, encoder, decoder, enc_opt, dec_opt, criterion,
         dec_opt.step()
 
         print_loss_total += loss
-        plot_loss_total += loss
+
 
         if steps % print_every == 0:
             print_loss_avg = print_loss_total / print_every
@@ -111,10 +115,12 @@ def train(dataset, encoder, decoder, enc_opt, dec_opt, criterion,
             torch.save(decoder, "./nlgdec.pth")
 
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+#changed this to cpu because i dont have cuda set up right
+#change this to device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = "cpu"
 
 
-trainset = pd.read_csv('.data/trainset.csv')
+trainset = pd.read_csv('./data/trainset.csv')
 trainset = trainset.assign(clean=utils.replace_punctuation(trainset['ref']))
 vocab_to_int, int_to_vocab = utils.get_tokens(trainset['clean'])
 as_tokens = trainset['clean'].apply(lambda x: [vocab_to_int[each] for each in x.split()])
@@ -139,5 +145,5 @@ epochs = 10
 for e in range(1, epochs+1):
     print(f"Starting epoch {e}")
     train(trainset['tokenized'], encoder, decoder, enc_opt, dec_opt, criterion,
-          teacher_forcing=0.9/e, device=device, print_every=200, save_every=1000,
+          teacher_forcing=0.9/e, device='cpu', print_every=200, save_every=1000,
           max_length=max_length)

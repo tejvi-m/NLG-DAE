@@ -21,7 +21,7 @@ def test(x):
 
 
 
-
+count = 0
 def newCorrupt(sentence):
     #get names - propernounse and sometimes nouns.
     #get adjectives
@@ -31,6 +31,10 @@ def newCorrupt(sentence):
 
     #using NER doesn't add much to it right now
 
+    global count
+
+    count += 1
+    print(count)
     sentence = nlp(sentence)
 
     toString = set()
@@ -69,14 +73,14 @@ def newCorrupt(sentence):
 
 if __name__ == "__main__":
 
-    trainset = pd.read_csv('./data/trainset.csv')
+    trainset = pd.read_csv('./data/questions.csv')
     cor = trainset['ref'].apply(lambda x: newCorrupt(x))
     trainset = trainset.assign(corrupted=cor)
     as_tokens = trainset['corrupted'].apply(lambda x: [test(each) for each in x.split()])
     trainset = trainset.assign(tokenized_corrupted=as_tokens)
 
 
-    trainset.to_csv('./data/processedTrainset.csv')
+    trainset.to_csv('./data/processedTrainset_ques.csv')
 
 
 

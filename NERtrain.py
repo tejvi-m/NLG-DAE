@@ -54,7 +54,7 @@ def dataloader(dataset, p_drop=0.6, max_length=50):
         yield input_tensor, target_tensor
 
 
-trainset = pd.read_csv('./data/processedTrainset.csv', lineterminator='\n')
+trainset = pd.read_csv('./data/processedTrainset_ques.csv', lineterminator='\n')
 trainset = trainset.assign(clean=utils.replace_punctuation(trainset['ref']))
 vocab_to_int, int_to_vocab = utils.get_tokens(trainset['clean'])
 
@@ -77,80 +77,83 @@ def train(dataset, encoder, decoder, enc_opt, dec_opt, criterion,
     losses = []
     for input_tensor, target_tensor in dataloader(dataset):
 #         print("input_tensor: ", input_tensor)
-        loss = 0
-        print_loss_total = 0  # Reset every print_every
-        plot_loss_total = 0  # Reset every plot_every
+        try:
+            loss = 0
+            print_loss_total = 0  # Reset every print_every
+            plot_loss_total = 0  # Reset every plot_every
 
-        steps += 1
+            steps += 1
 
-        input_tensor = input_tensor.to(device)
-        target_tensor = target_tensor.to(device)
+            input_tensor = input_tensor.to(device)
+            target_tensor = target_tensor.to(device)
 
-        enc_opt.zero_grad()
-        dec_opt.zero_grad()
+            enc_opt.zero_grad()
+            dec_opt.zero_grad()
 
-        h, c = encoder.init_hidden(device=device)
-        encoder_outputs = torch.zeros(max_length, 2*encoder.hidden_size).to(device)
+            h, c = encoder.init_hidden(device=device)
+            encoder_outputs = torch.zeros(max_length, 2*encoder.hidden_size).to(device)
 
-        # Run input through encoder
-        enc_outputs, enc_hidden = encoder.forward(input_tensor, (h, c))
+            # Run input through encoder
+            enc_outputs, enc_hidden = encoder.forward(input_tensor, (h, c))
 
-        # Prepare encoder_outputs for attention
-        encoder_outputs[:min(enc_outputs.shape[0], max_length)] = enc_outputs[:max_length,0,:]
+            # Prepare encoder_outputs for attention
+            encoder_outputs[:min(enc_outputs.shape[0], max_length)] = enc_outputs[:max_length,0,:]
 
-        # First decoder input is the <SOS> token
-        dec_input = torch.Tensor([[0]]).type(torch.LongTensor).to(device)
-        dec_hidden = enc_hidden
+            # First decoder input is the <SOS> token
+            dec_input = torch.Tensor([[0]]).type(torch.LongTensor).to(device)
+            dec_hidden = enc_hidden
 
-        dec_outputs = []
-        for ii in range(target_tensor.shape[0]):
-          # Pass in previous output and hidden state
-            dec_out, dec_hidden, dec_attn = decoder.forward(dec_input, dec_hidden, encoder_outputs)
-            _, out_token = dec_out.topk(1)
+            dec_outputs = []
+            for ii in range(target_tensor.shape[0]):
+              # Pass in previous output and hidden state
+                dec_out, dec_hidden, dec_attn = decoder.forward(dec_input, dec_hidden, encoder_outputs)
+                _, out_token = dec_out.topk(1)
 
-            # Curriculum learning, sometimes use the decoder output as the next input,
-            # sometimes use the correct token from the target sequence
-            if np.random.rand() < teacher_forcing:
-                dec_input = target_tensor[ii].view(*out_token.shape)
-            else:
-                dec_input = out_token.detach().to(device)  # detach from history as input
+                # Curriculum learning, sometimes use the decoder output as the next input,
+                # sometimes use the correct token from the target sequence
+                if np.random.rand() < teacher_forcing:
+                    dec_input = target_tensor[ii].view(*out_token.shape)
+                else:
+                    dec_input = out_token.detach().to(device)  # detach from history as input
 
-            dec_outputs.append(out_token)
+                dec_outputs.append(out_token)
 
-            loss += criterion(dec_out, target_tensor[ii])
+                loss += criterion(dec_out, target_tensor[ii])
 
-            # If the input is the <EOS> token (end of sentence)...
-            if dec_input.item() == 1:
-                break
+                # If the input is the <EOS> token (end of sentence)...
+                if dec_input.item() == 1:
+                    break
 
-        loss.backward()
+            loss.backward()
 
-        # `clip_grad_norm` helps prevent the exploding gradient problem in RNNs / LSTMs.
-        nn.utils.clip_grad_norm_(encoder.parameters(), 5)
-        nn.utils.clip_grad_norm_(decoder.parameters(), 5)
+            # `clip_grad_norm` helps prevent the exploding gradient problem in RNNs / LSTMs.
+            nn.utils.clip_grad_norm_(encoder.parameters(), 5)
+            nn.utils.clip_grad_norm_(decoder.parameters(), 5)
 
-        enc_opt.step()
-        dec_opt.step()
+            enc_opt.step()
+            dec_opt.step()
 
-        print_loss_total += loss
-        plot_loss_total += loss
+            print_loss_total += loss
+            plot_loss_total += loss
 
-        losses.append(loss)
-        if steps % print_every == 0:
-            print_loss_avg = print_loss_total / print_every
-            print_loss_total = 0
-            print(f"Loss avg. = {print_loss_avg}")
-            list1 = [int_to_vocab[each.item()] for each in input_tensor]
-            list2 = [int_to_vocab[each.item()] for each in dec_outputs]
-            list3 = [int_to_vocab[each.item()] for each in target_tensor]
-            print(list1)
-            print(list2)
-            print("target: ", list3)
-
+            losses.append(loss)
+            if steps % print_every == 0:
+                print_loss_avg = print_loss_total / print_every
+                print_loss_total = 0
+                print(f"Loss avg. = {print_loss_avg}")
+                list1 = [int_to_vocab[each.item()] for each in input_tensor]
+                list2 = [int_to_vocab[each.item()] for each in dec_outputs]
+                list3 = [int_to_vocab[each.item()] for each in target_tensor]
+                print(list1)
+                print(list2)
+                print("target: ", list3)
+        except:
+            print(steps, " failed.")
         print("steps: ", steps)
+
         if steps% save_every == 0:
-            torch.save(encoder, "NERnlgenc.pth")
-            torch.save(decoder, "NERnlgdec.pth")
+            torch.save(encoder, "NERnlgenc_ques.pth")
+            torch.save(decoder, "NERnlgdec_ques.pth")
 
 #device is cpu because i dont have cuda set up right. change it to the following to use a gpu
 # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -168,18 +171,14 @@ enc_opt = optim.Adam(encoder.parameters(), lr=0.001, amsgrad=True)
 dec_opt = optim.Adam(decoder.parameters(), lr=0.001, amsgrad=True)
 criterion = nn.NLLLoss()
 
-if os.path.isfile('NERnlgenc.pth') and os.path.isfile('NERnlgdec.pth'):
-    encoder = torch.load("nlgenc.pth", map_location = 'cpu')
-    decoder = torch.load("nlgdec.pth", map_location = 'cpu')
-
 epochs = 10
 
 for e in range(1, epochs+1):
 
-    if os.path.exists("./nlgenc.pth"):
+    if os.path.exists("./nlgenc_ques.pth"):
         print("found model weights. continuing training.0")
-        encoder = torch.load("nlgenc.pth", map_location = 'cpu')
-        decoder = torch.load("nlgdec.pth", map_location = 'cpu')
+        encoder = torch.load("nlgenc_ques.pth", map_location = 'cpu')
+        decoder = torch.load("nlgdec_ques.pth", map_location = 'cpu')
 
     print(f"Starting epoch {e}")
     train(trainset['tokenized'], encoder, decoder, enc_opt, dec_opt, criterion,
